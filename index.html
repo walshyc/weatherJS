@@ -7,28 +7,41 @@
       rel="stylesheet"
       href="https://bootswatch.com/4/yeti/bootstrap.min.css"
     />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"
+      integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs="
+      crossorigin="anonymous"
+    ></script>
     <style>
       .modal-content {
         border: none;
+      }
+      .stats {
+          font-size: 1.5rem;
+          font-weight: 300;
+    line-height: 1.2;
       }
     </style>
     <title>WeatherJS</title>
   </head>
   <body>
-    <div class="container">
+    <div class="container bg-primary">
       <div class="row">
         <div
-          class="col-md-6 mx-auto text-center bg-primary mt-5 p-5 rounded text-white"
+          class="col-md-6 mx-auto text-center bg-primary p-5 rounded text-white"
         >
-          <h1 id="w-location"></h1>
-          <h3 class="text-dark" id="w-desc"></h3>
+          <h1 class="display-4" id="w-location"></h1>
+          <h3 class="text-light" id="w-desc"></h3>
           <h3 id="w-string"></h3>
           <img src="#" alt="Todays weather icon" id="w-icon" />
-          <ul class="list-group mt-3" id="w-details">
-            <li class="list-group-item" id="w-humidity"></li>
-            <li class="list-group-item" id="w-dewpoint"></li>
-            <li class="list-group-item" id="w-feels-like"></li>
-            <li class="list-group-item" id="w-wind"></li>
+          <ul class="list-group mt-3 text-dark" id="w-details">
+            <li class="list-group-item text-primary stats display-4" id="w-humidity"></li>
+            <li class="list-group-item text-primary stats" id="w-dewpoint"></li>
+            <li class="list-group-item text-primary stats" id="w-feels-like"></li>
+            <li class="list-group-item text-primary stats" id="w-wind"></li>
+            <li class="list-group-item text-primary stats" id="w-uv"></li>
+            <li class="list-group-item text-primary stats" id="w-rise"></li>
+            <li class="list-group-item text-primary stats" id="w-set"></li>
           </ul>
           <hr />
           <button
