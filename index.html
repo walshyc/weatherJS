@@ -17,14 +17,14 @@
         border: none;
       }
       .stats {
-          font-size: 1.5rem;
+          font-size: 1.3rem;
           font-weight: 300;
     line-height: 1.2;
       }
     </style>
     <title>WeatherJS</title>
   </head>
-  <body>
+  <body class="bg-primary">
     <div class="container bg-primary">
       <div class="row">
         <div
@@ -49,6 +49,7 @@
             class="btn btn-success"
             data-toggle="modal"
             data-target="#locModal"
+           
           >
             Change Location
           </button>
@@ -86,11 +87,11 @@
                 <input type="text" name="city" id="city" class="form-control" />
               </div>
               <div class="form-group">
-                <label for="state">State</label>
+                <label for="state">Country</label>
                 <input
                   type="text"
-                  name="state"
-                  id="state"
+                  name="country"
+                  id="country"
                   class="form-control"
                 />
               </div>
