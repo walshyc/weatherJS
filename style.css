@@ -1,0 +1,23 @@
+.modal-content {
+  border: none;
+}
+.stats {
+  font-size: 1.3rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.weatherBG{
+    background-image: linear-gradient(0deg, #08AEEA 0%, #2AF598 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+       
+}
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+}
